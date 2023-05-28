@@ -1,0 +1,16 @@
+@import 'base.scss';
+
+.popup {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.title-container {
+    margin-right: 20px;
+}
+
+.options-popup-button {
+    padding: 7px 24px !important;
+}

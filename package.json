@@ -1,0 +1,44 @@
+{
+    "author": "TODO: add your name",
+    "browserslist": "> 0.25%, not dead",
+    "dependencies": {
+        "@thednp/color-picker": "^1.0.1",
+        "normalize.css": "^8.0.1"
+    },
+    "description": "TODO: add description",
+    "devDependencies": {
+        "@jest/globals": "^29.5.0",
+        "@thednp/color-picker": "^1.0.1",
+        "@types/chrome": "^0.0.233",
+        "@typescript-eslint/eslint-plugin": "^5.59.0",
+        "@typescript-eslint/parser": "^5.59.0",
+        "copy-webpack-plugin": "^11.0.0",
+        "css-loader": "^6.7.3",
+        "eslint": "^8.38.0",
+        "eslint-webpack-plugin": "^4.0.1",
+        "jest": "^29.5.0",
+        "jest-mock": "^29.5.0",
+        "mini-css-extract-plugin": "^2.7.5",
+        "normalize.css": "^8.0.1",
+        "sass": "^1.62.0",
+        "sass-loader": "^13.2.2",
+        "ts-jest": "^29.1.0",
+        "ts-loader": "^9.4.2",
+        "typescript": "^5.0.4",
+        "webpack": "^5.80.0",
+        "webpack-cli": "^5.0.1",
+        "webpack-dev-server": "^4.13.3",
+        "webpack-merge": "^5.8.0"
+    },
+    "license": "MIT",
+    "name": "chrome-extension-template",
+    "scripts": {
+        "build": "webpack --config webpack.prod.js",
+        "watch": "webpack watch --config webpack.dev.js",
+        "chrome": "chrome --disable-extensions-except=%cd%/dist --load-extension=%cd%/dist",
+        "edge": "msedge --disable-extensions-except=%cd%/dist --load-extension=%cd%/dist --user-data-dir=%TEMP%/edge-profile",
+        "lint": "eslint --ext .js,.ts --max-warnings=0 .",
+        "test": "jest"
+    },
+    "version": "0.0.1"
+}

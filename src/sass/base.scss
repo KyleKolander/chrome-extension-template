@@ -1,0 +1,51 @@
+@import 'normalize.css';
+
+body {
+    background-color: #202124;
+    color: #ffffff;
+}
+
+.title-container {
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+}
+
+.icon,
+.title {
+    display: inline-block;
+}
+
+.icon {
+    padding-right: 20px;
+}
+
+.options-popup-button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    transition: background-color 0.3s ease;
+}
+
+.options-popup-button:hover {
+    background-color: #0069d9;
+}
+
+.options-popup-button:focus {
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.no-wrap {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.plain {
+    text-decoration: none;
+}

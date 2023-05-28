@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+        <title>TODO: Set title for Options page</title>
+
+        <meta charset="utf-8">
+
+        <meta name="description" content="TODO: Set description">
+        <meta name="keywords"    content="options extension template">
+        <meta name="viewport"    content="width=device-width, initial-scale=1">
+
+        <link rel="icon"       href="../icons/16x.png" type="image/png">
+        <link rel="stylesheet" href="../vendor/color-picker/color-picker.css">
+        <link rel="stylesheet" href="../css/options-page.css">
+    </head>
+
+    <body>
+        <div class="title-container">
+            <img class="icon" src="../icons/32x.png" title="icon" />
+            <h1 class="title">Options</h1>
+        </div>
+
+        <div class="table">
+            <div class="row first">
+                <div class="cell label">
+                    <label for="primaryBackgroundColor">Primary Background Color: </label>
+                </div>
+                <div class="cell value">
+                    <div class="color-picker">
+                        <input id="primaryBackgroundColor" class="color-preview btn-appearance" data-function="color-picker" data-format="hex" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell label">
+                    <label for="secondaryBackgroundColor">Secondary Background Color: </label>
+                </div>
+                <div class="cell value">
+                    <div class="color-picker">
+                        <input id="secondaryBackgroundColor" class="color-preview btn-appearance" data-function="color-picker" data-format="hex" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell label">
+                </div>
+                <div class="cell value save">
+                    <button id="saveButton" class="options-popup-button">Save</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell label">
+                </div>
+                <div class="cell value status">
+                    <span id="statusDiv"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="links-container">
+            <h2>Test the changes by clicking on this link:</h2>
+            <a class="plain" target="_blank" rel="noopener noreferrer" href="https://google.com">https://google.com</a>
+        </div>
+
+        <script src="../vendor/color-picker/color-picker.js"></script>
+        <script src="../js/options-page.js"></script>
+    </body>
+
+</html>
